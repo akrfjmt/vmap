@@ -15,6 +15,8 @@ type VMAP struct {
 	AdBreaks []AdBreak `xml:"AdBreak"`
 	// Can be used to express additional information not supported in the VMAP specification.
 	Extensions *Extensions `xml:",omitempty"`
+	// Comment
+	Comment string `xml:",comment"`
 }
 
 // AdBreak represents a single ad break, but may allow for multiple ads.
